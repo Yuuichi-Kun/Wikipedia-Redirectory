@@ -12,33 +12,42 @@
       - a
         - h4
         - p (lorem20)
-
+  - div.Favorites
+    - div.articles
+      - a
+        - h4
+        - p (lorem20)
+      - <button onclick="toggleFavorite(${pageid}, '${sanitizeText(title)}', '${sanitizeText(snippet)}')">${isFavorited ? 'Unfavorite' : 'Favorite'}</button>
+                       
 #### API DOCS
 
 - [wiki docs](https://www.mediawiki.org/wiki/API:Main_page)
 
 - ready to go url's
 
-#### Initial Setup
+Struktur folder:
+├── README.md
+├── app.js
+├── assets
+    └── MikuWPP.mp4
+├── index.html
+├── styles.css
+├── wiki-logo.png
+└── wiki-urls.js
 
-- select form, input, results
-- listen for submit events
-- if empty value, display error
-- create fetchPages()
-- pass valid input value into the fetchPages()
+Perubahan css:
 
-#### Fetch Pages
+- Mengubah background menjadi video.
+- Mengubah tampilan card menjadi minimalist
+- Menambahkan tampilan untuk bagian favorite and tombol favorite
 
-- display loading while fetching
-- construct dynamic url
-- display if error
-- display error no items
-- create renderResults()
-- pass valid results into renderResults()
+Perubahan JS:
 
-#### Render Results
+- Fungsi localStorage
+- Fungsi favorite
+- Memperbaiki Bug Raw code muncul pada view
 
-- iterate over the list
-- pull out title, snippet, pageid
-- setup a card
-- set results with div.articles and list inside
+Perubahan HTML:
+
+- Penambahan class favorite
+- Penambahan class video-background
