@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wikipedia Starter</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Video background -->
+    <div class="video-background">
+      <video autoplay loop muted>
+        <source src="./assets/MikuWPP.mp4" type="video/mp4" repeat/>
+      </video>
+    </div>
+
+    <section class="wiki">
+      <div class="container">
+        <img src="./wiki-logo.png" alt="wiki-logo">
+        <h3>Wikipedia Redirectory</h3>
+        <form class="form">
+          <input type="text" class="form-input" placeholder="Search...">
+          <button type="submit" class="submit-btn">Search</button>
+        </form>
+      </div>
+      <!-- Result -->
+      <div class="result"></div>
+      <hr>
+      <h2>Favorites</h2>
+      <div class="favorites"></div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
