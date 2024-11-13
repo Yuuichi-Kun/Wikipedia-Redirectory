@@ -17,7 +17,7 @@
       - a
         - h4
         - p (lorem20)
-      - <button onclick="toggleFavorite(${pageid}, '${sanitizeText(title)}', '${sanitizeText(snippet)}')">${isFavorited ? 'Unfavorite' : 'Favorite'}</button>
+      - button onclick="toggleFavorite(${pageid}, '${sanitizeText(title)}', '${sanitizeText(snippet)}')">${isFavorited ? 'Unfavorite' : 'Favorite'}
                        
 #### API DOCS
 
