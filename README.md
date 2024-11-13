@@ -26,14 +26,14 @@
 - ready to go url's
 
 Struktur folder:
-├── README.md
-├── app.js
-├── assets
-    └── MikuWPP.mp4
-├── index.html
-├── styles.css
-├── wiki-logo.png
-└── wiki-urls.js
+- README.md
+- app.js
+- assets
+    - MikuWPP.mp4
+- index.html
+- styles.css
+- wiki-logo.png
+- wiki-urls.js
 
 Perubahan css:
 
